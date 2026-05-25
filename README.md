@@ -110,6 +110,22 @@ No other dependencies. The space-group lookup table and HTML template are embedd
 
 ---
 
+## Run from anywhere (optional)
+
+If you'd rather invoke the script with a short command from any directory instead of `python /full/path/to/cell_param_tables.py`, drop a one-line `.cmd` shim into a folder that's on your Windows `PATH`.
+
+Create a file called `pf.cmd` containing:
+
+```bat
+python "C:\full\path\to\cell_param_tables.py" %*
+```
+
+Replace the path with wherever you've actually put the script. From then on, typing `pf` in any shell runs the wizard against the current directory — exactly as if you'd run `python cell_param_tables.py` from that location. The `%*` forwards any arguments through (none are required at present, but it future-proofs the shim).
+
+If you don't already have a shim folder, create one (e.g. `C:\Users\<you>\bin\`) and add it to your `PATH`: **Win+R → `sysdm.cpl` → Advanced → Environment Variables → edit `Path` for your user → New → add the folder**. Open a fresh terminal afterwards for the change to take effect.
+
+---
+
 ## Project layout
 
 ```
@@ -177,4 +193,4 @@ In May 2026 the script was **refactored and partially rewritten by Claude (Anthr
 
 The core parsing logic — regex sets, crystallographic rounding, crystal-system inference, the Word-derived `resource.htm` — is unchanged from the original. This note is included for transparency about what is and isn't human-authored.
 
-The pre-rewrite version is preserved in the git history under tag `v1.2` / commit `15fac92`.
+The pre-rewrite version is preserved in the original repository at [github.com/p3rAsperaAdAstra/TOPAS-Param-Tables-public-](https://github.com/p3rAsperaAdAstra/TOPAS-Param-Tables-public-) (tag `v1.2`, commit `15fac92`).
