@@ -26,28 +26,28 @@ That's it. Open the resulting `.htm` in a browser or paste it straight into Word
 ```
 Found 4 .out file(s) under C:\...\examples:
 
-  [1] PK-DS-4b_5-50_002_37min_IV_pawley_01.out
-  [2] PK-DS-5_5-50_002_37min_V_pawley_01.out
-  [3] PK-DS-6a_5-50_002_37min_V_pawley_01.out
-  [4] PK-DS-6b_5-50_002_37min_IV_pawley_01.out
+  [1] sample-A_5-50_002_37min_IV_pawley_01.out
+  [2] sample-B_5-50_002_37min_V_pawley_01.out
+  [3] sample-C_5-50_002_37min_V_pawley_01.out
+  [4] sample-D_5-50_002_37min_IV_pawley_01.out
 
 Select files by:
   - "all"
   - indices, e.g. "1,3,5" or "1 3 5"
   - ranges, e.g. "2-4"
-  - wildcards (fnmatch), e.g. "*IV*" or "PK-DS-6?_*"
+  - wildcards (fnmatch), e.g. "*IV*" or "sample-?_*"
   - any mix of the above, comma/space separated
 
 Selection: *IV*
 
 Selected 2 file(s):
-  - PK-DS-4b_5-50_002_37min_IV_pawley_01.out
-  - PK-DS-6b_5-50_002_37min_IV_pawley_01.out
+  - sample-A_5-50_002_37min_IV_pawley_01.out
+  - sample-D_5-50_002_37min_IV_pawley_01.out
 Proceed? [Y/n]:
 
 Output filename [done.htm]: IV_subset
-PK-DS-4b_5-50_002_37min_IV_pawley_01.out: (1/2)
-PK-DS-6b_5-50_002_37min_IV_pawley_01.out: (2/2)
+sample-A_5-50_002_37min_IV_pawley_01.out: (1/2)
+sample-D_5-50_002_37min_IV_pawley_01.out: (2/2)
 
 Wrote IV_subset.htm
 ```

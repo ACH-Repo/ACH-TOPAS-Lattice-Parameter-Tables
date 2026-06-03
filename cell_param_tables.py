@@ -806,7 +806,7 @@ def parse_selection(raw, files):
 	  - "all"                          -> every file
 	  - indices "1,3,5" or "1 3 5"     -> matching entries (1-based)
 	  - ranges "1-3"                   -> inclusive range
-	  - wildcards "*IV*", "PK-DS-4?*"  -> fnmatch against basename and rel-path
+	  - wildcards "*IV*", "sample-?*"  -> fnmatch against basename and rel-path
 	  - mix of the above, comma/space separated
 	Returns a de-duplicated list preserving the order files were listed in.
 	Raises ValueError on bad input.'''
@@ -868,7 +868,7 @@ def select_files_wizard(root='.'):
 	print('  - "all"')
 	print('  - indices, e.g. "1,3,5" or "1 3 5"')
 	print('  - ranges, e.g. "2-4"')
-	print('  - wildcards (fnmatch), e.g. "*IV*" or "PK-DS-6?_*"')
+	print('  - wildcards (fnmatch), e.g. "*IV*" or "sample-?_*"')
 	print('  - any mix of the above, comma/space separated')
 
 	while True:
